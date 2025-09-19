@@ -41,6 +41,11 @@ Below, the **Students** table shows the unified student directory with:
   - _Not contacted 7d_, _High intent_, _Needs essay help_ (togglable; combine with search).  
 - **Sortable columns** (Name, Email, Country, Last Login).  
 - **Latest application status** badge per student.
+ _Landing Page_
+  ![Screenshot](undergraduation-crm/images/LandingPage.png)
+
+_QuickStat-Applications_
+  ![Screenshot](undergraduation-crm/images/QuickStat_applicationlist.png)
 
 Click a row to open the **Student Detail** page:  
 - **Info card** + **progress bars** (same 4 stages; clickable to filter the Applications table).  
@@ -48,12 +53,20 @@ Click a row to open the **Student Detail** page:
 - **Interaction Timeline**: sessions (Login → nested activities such as AI questions & application submissions) with date filtering.  
 - **Communication Log**: grouped by day; collapsible; clicking an item opens a content popover (email/SMS/call/note).  
 - **Internal Notes**: wide modal with add/edit/delete; shows author, timestamp, content.
+_StudentInfo&ApplicationInfo_
+  ![Screenshot](undergraduation-crm/images/StudentInfo_ApplicationInfo.png)
+_Interaction&CommunicationLog_
+  ![Screenshot](undergraduation-crm/images/Interaction&CommunicationLog.png)
+_InternalNotes_
+  ![Screenshot](undergraduation-crm/images/InternalNotes.png)
 
 From the header, click **Communication** to open a **3‑mode console** (glass UI):  
 1) **Manual Communication** (log a call or internal note),  
 2) **Trigger Follow‑up Email (Mock)** with templates,  
 3) **Schedule Team Task** (due date/time, assignee).  
 Toasts confirm actions.
+_CommunicationTools_
+  ![Screenshot](undergraduation-crm/images/CommunicationTools.png)
 
 Everything is **SVG iconography**, **TailwindCSS**, responsive, and dark‑mode ready.
 
