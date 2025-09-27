@@ -78,13 +78,21 @@ export default function StudentTable() {
               ? studentDate > filterDate
               : studentDate < filterDate;
           }
+          const loginStr =
+            typeof s.lastLogin === "string"
+                ? s.lastLogin
+                : s.lastLogin?.toDate
+                ? s.lastLogin.toDate().toISOString()
+                : s.lastLogin instanceof Date
+                ? s.lastLogin.toISOString()
+                : "";
 
           return (
             (s.name?.toLowerCase() || "").includes(term) ||
             (s.email?.toLowerCase() || "").includes(term) ||
             (s.country?.toLowerCase() || "").includes(term) ||
             (s.latestStatus?.toLowerCase() || "").includes(term) ||
-            (s.lastLogin?.toLowerCase() || "").includes(term)
+            loginStr.toLowerCase().includes(term)
           );
         })
       );
