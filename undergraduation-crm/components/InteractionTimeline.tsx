@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import type { ReactNode } from "react";
 
 type Interaction = {
   id: string;
@@ -39,7 +40,7 @@ function duration(from?: Date | null, to?: Date | null) {
 
 const TypeStyle: Record<
   Interaction["type"],
-  { dotBg: string; icon: JSX.Element; label: string; text: string }
+  { dotBg: string; icon: ReactNode; label: string; text: string }
 > = {
   login: {
     dotBg: "bg-green-500",
